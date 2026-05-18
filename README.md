@@ -1,4 +1,4 @@
-# 🤖 Agent do Nadson - WhatsApp AI Bot
+# Agent do Nadson - WhatsApp AI Bot
 
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![AI](https://img.shields.io/badge/AI-Ollama-blue)
