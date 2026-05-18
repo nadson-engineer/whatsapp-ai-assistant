@@ -78,10 +78,8 @@ async function startBot() {
       const numeroMensagem =
         numero.replace("@s.whatsapp.net", "")
 
-      // =========================
+      
       // COMANDOS ADMIN
-      // =========================
-
       if (
         msg.key.fromMe ||
         numeroMensagem.includes(numeroAdmin)
@@ -115,10 +113,8 @@ async function startBot() {
       console.log("\nMensagem:")
       console.log(texto)
 
-      // =========================
+      
       // PRIMEIRA MENSAGEM
-      // =========================
-
       if (!usuariosAtendidos.has(numero)) {
 
         usuariosAtendidos.add(numero)
@@ -138,11 +134,8 @@ Assim que ele retornar, aviso a ele 🙂`
 
         return
       }
-
-      // =========================
+      
       // RESPOSTAS RÁPIDAS
-      // =========================
-
       const respostaBaixa =
         texto.toLowerCase().trim()
 
@@ -174,10 +167,7 @@ Assim que ele retornar, aviso a ele 🙂`
 
       await sock.sendPresenceUpdate("composing", numero)
 
-      // =========================
-      // IA (SEPARADA)
-      // =========================
-
+      // IA 
       const ia = await askOllama(texto)
 
       console.log("\nIA:")
